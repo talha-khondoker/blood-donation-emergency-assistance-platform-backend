@@ -22,7 +22,7 @@ origins = [
     "http://127.0.0.1:5174",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://blood-aid-assistance.netlify.app/",
+    "https://netlify.app",
 ]
 
 
@@ -35,16 +35,6 @@ app.add_middleware(
 )
 
 
-const cors = require('cors');
-
-const corsOptions = {
-  origin: 'https://blood-aid-assistance.netlify.app',
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-};
-
-app.use(cors(corsOptions));
 
 
 models.Base.metadata.create_all(
